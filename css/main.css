@@ -1,0 +1,415 @@
+/*-- CSS File for FILM CLUB Project --*/
+
+
+/*-----Color Scheme
+text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF
+--------------------------------------------*/
+
+* {
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, ul, li, span {
+  font-family: 'PT Sans';
+  color: #0B1942;
+  font-weight: 300;
+}
+
+p, li {
+  font-size: 0.85rem;
+}
+
+p {
+  line-height: 150%;
+}
+
+/*li {
+  font-size: 0.75rem;
+}*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+  min-height: 15vw;
+}
+
+/*--Top Nav Bar---*/
+
+.header-img-box {
+  margin: 0;
+  background-color: #F5005B;
+  flex-basis: 33.33%;
+  padding: 2%;
+}
+
+
+#top-nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+}
+
+#top-nav-bar .nav-link {
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.nav-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#home-link {
+  background-color: #00A5BF;
+  /*width: 100%;*/
+}
+
+#calendar-link {
+  background-color: #00B7D3;
+  /*width: 100%;*/
+}
+
+#join-link {
+  background-color: #00D5E7;
+  /*width: 100%;*/
+}
+
+/*--Home "Get Involved" Section---*/
+
+h1 {
+  padding-bottom: 2%;
+}
+
+.section-top {
+  padding: 4%;
+}
+
+.section-top h2 {
+  padding: 1% 4%;
+}
+
+.section-top p {
+  padding: 2% 0%;
+}
+
+.get-involved-title {
+  background-color: #0B1942;
+}
+
+.get-involved-title h2 {
+  color: #FFFFFF;
+}
+
+/*--Home "Up Next" Section---*/
+
+.section-bottom {
+  background-color: #0B1942;
+  padding: 4%
+}
+
+.section-bottom h1 {
+  padding-left: 4%;
+  color: #FFFFFF;
+}
+
+.next-film, .upcoming-film {
+  background-color: #E2E2E2;
+  padding: 2%;
+}
+
+.next-film {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 4% 0%;
+}
+
+.next-film-img, .next-film-info {
+  flex-basis: 45%;
+}
+
+.next-film-title {
+  padding: 2% 0% 6% 0%;
+}
+
+.next-film-title h3 {
+  padding-bottom: 4%;
+}
+
+.next-film-themes {
+  border-top: 1px solid #0B1942;
+  padding: 4% 0% 0% 0%;
+}
+
+.next-film-themes ul, li {
+  list-style: circle;
+  margin: 4% 0% 0% 7%;
+  padding: 0;
+}
+
+.next-film-themes h5 {
+  font-weight: 600;
+}
+
+.upcoming-film {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.upcoming-film-box {
+  flex-basis: 40%;
+  padding-bottom: 4%;
+}
+
+.upcoming-film-box a, p, span {
+  font-size: 0.75rem;
+}
+
+.film-date {
+  font-weight: bold;
+}
+
+/*--Footer---*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+#bottom-nav-bar {
+  /*flex-basis: 60%;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+#bottom-nav-bar .nav-link {
+  /*flex-basis: 33.33%;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 4%;
+}
+
+.legal-footer {
+  background-color: #7DDFE8;
+  text-align: center;
+  /*flex-basis: 40%;*/
+  padding: 7%;
+  width: 100%;
+}
+
+.legal-footer p {
+  color: white;
+}
+
+
+
+/*----Tablet Display----*/
+
+@media screen and ( min-width: 545px ) {
+
+  /*----HOME PAGE----*/
+
+  p, li {
+    font-size: 0.85rem;
+  }
+
+  /*li {
+    font-size: 0.75rem;
+  }*/
+
+  /*--Top Nav Bar---*/
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+  }
+
+  .header-img-box {
+    margin: 0;
+    background-color: #F5005B;
+    flex-basis: 20%;
+    padding: 2%;
+  }
+
+  #top-nav-bar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #7DDFE8;
+  }
+
+  #top-nav-bar .nav-link {
+    flex-basis: 15%;
+  }
+
+  .gap {
+    flex-basis: 55%;
+  }
+
+  /*--Home "Get Involved" Section---*/
+  .get-involved-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .get-involved-chunk {
+    flex: 1;
+  }
+
+  #take-notes {
+    margin: 0% 3%;
+  }
+
+  /*--Home "Up Next" Section---*/
+  .upcoming-film {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+
+  .upcoming-film-box {
+    flex-basis: 20%;
+    padding-bottom: 4%;
+  }
+
+  /*--Footer---*/
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    width: 100%;
+  }
+
+  #bottom-nav-bar {
+    /*flex-basis: 60%;*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  #bottom-nav-bar .nav-link {
+    /*flex-basis: 33.33%;*/
+    width: 100%;
+    padding: 2%;
+  }
+
+  .legal-footer {
+    background-color: #7DDFE8;
+    text-align: right;
+    /*flex-basis: 40%;*/
+    padding: 4%;
+    width: 100%;
+    color: white;
+  }
+
+
+}
+
+
+
+/*----Desktop Display----*/
+
+@media screen and ( min-width: 769px ) {
+
+  /*----HOME PAGE----*/
+
+  p, li {
+    font-size: 0.85rem;
+  }
+
+  .film-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .next-film {
+    margin: 0% 2% 0% 0%;
+    flex: 1;
+  }
+
+  .upcoming-film {
+    flex: 1;
+    margin-left: 2%;
+  }
+
+  .upcoming-film-box {
+    flex-basis: 40%;
+    padding-bottom: 4%;
+  }
+
+
+
+}
