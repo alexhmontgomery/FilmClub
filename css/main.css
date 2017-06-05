@@ -35,6 +35,10 @@ a, p, h1, h2, h3, h4, h5, h6, ul, li, span, label, button {
   font-weight: 300;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 p, li {
   font-size: 0.85rem;
 }
@@ -89,16 +93,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
 
 
-.nav-link a {
+.nav-link {
   text-decoration: none;
   color: #FFFFFF;
   width: 100%;
+  height: auto;
   text-align: center;
 }
 
@@ -151,17 +157,20 @@ h1 {
 
 .section-bottom {
   background-color: #0B1942;
-  padding: 4%;
 }
 
 .section-bottom h1 {
-  padding-left: 4%;
   color: #FFFFFF;
+  padding: 0% 4%;
 }
 
 .next-film, .upcoming-film {
   background-color: #E2E2E2;
   padding: 2%;
+}
+
+.film-layout {
+  padding: 4%;
 }
 
 .next-film {
@@ -170,7 +179,11 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  margin: 4% 0%;
+  margin: 5% 0%;
+}
+
+.next-film h5 {
+  color: #0B1942;
 }
 
 .next-film-img, .next-film-info {
@@ -183,6 +196,10 @@ h1 {
 
 .next-film-title h3 {
   padding-bottom: 4%;
+}
+
+.next-film-title a {
+  color: #00B7D3;
 }
 
 .next-film-themes {
@@ -207,6 +224,8 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   align-content: center;
+  padding: 4% 0%;
+  margin: 3% 0%;
 }
 
 .upcoming-film-box {
@@ -216,6 +235,10 @@ h1 {
 
 .upcoming-film-box a, p, span {
   font-size: 0.75rem;
+}
+
+.upcoming-film-title a {
+  color: #00B7D3;
 }
 
 .film-date {
@@ -326,12 +349,21 @@ footer {
 
 /*-------------------JOIN PAGE------------------------*/
 
+.join-form p {
+  padding: 0%;
+}
+
 input {
   width: 100%;
+  font-size: 0.8em;
 }
 
 .genre-choice input {
   width: auto;
+}
+
+.name-info, .email-info, .first-password, .second-password {
+  padding-bottom: 4%;
 }
 
 .pic-info {
@@ -340,6 +372,7 @@ input {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 3%;
 }
 
 .pic-info-text {
@@ -348,7 +381,6 @@ input {
     text-align: left;
 }
 
-
 .pic-info img {
   max-height: 50vh;
   padding: 2%;
@@ -356,11 +388,23 @@ input {
 }
 
 .profile-genre {
-  padding: 7% 0% 0% 0%;
+  padding: 4% 0% 0% 0%;
+}
+
+.profile-genre p {
+  padding: 1.5% 0%;
+}
+
+.genre-category {
+  padding: 0.5% 0%;
 }
 
 .profile-adds {
   padding: 7% 0% 0% 0%;
+}
+
+.additional-title {
+  padding: 1% 0%;
 }
 
 .profile-adds textarea {
@@ -368,7 +412,11 @@ input {
 }
 
 .join-button {
-  padding: 7% 0%;
+  padding: 5% 0%;
+}
+
+label {
+  font-size: 0.8em;
 }
 
 button {
@@ -376,7 +424,7 @@ button {
   color: white;
   width: 35%;
   border: none;
-  padding: 4%;
+  padding: 3%;
   font-weight: 500;
   font-size: 0.75em;
 }
@@ -396,6 +444,10 @@ button {
   /*li {
     font-size: 0.75rem;
   }*/
+
+  h1 {
+    font-size: 2em;
+  }
 
   /*--Top Nav Bar---*/
   header {
@@ -463,11 +515,22 @@ button {
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 2% 0%;
   }
 
   .upcoming-film-box {
     flex-basis: 20%;
     padding-bottom: 4%;
+  }
+
+  .next-film-themes ul, li {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .upcoming-film-box a, span {
+    font-size: .8em;
   }
 
   /*--Footer---*/
@@ -537,14 +600,14 @@ button {
   }
 
   .pic-info {
-    flex-basis: 49%;
+    flex-basis: 50%;
   }
 
   .name-email-and-password {
-    flex-basis: 48%;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     align-items: stretch;
   }
@@ -564,7 +627,7 @@ button {
   }
 
   .genre-category {
-    flex-basis: 48%;
+    flex-basis: 50%;
     text-align: left;
   }
 
@@ -614,6 +677,10 @@ button {
     flex: 1;
   }
 
+  .next-film-themes ul, li {
+    margin: 4% 0% 0% 7%;
+  }
+
   .upcoming-film {
     flex: 1;
     margin-left: 2%;
@@ -622,6 +689,10 @@ button {
   .upcoming-film-box {
     flex-basis: 40%;
     padding-bottom: 4%;
+  }
+
+  .upcoming-film-box a, span {
+    font-size: .85em;
   }
 
   #bottom-nav-bar {
@@ -648,6 +719,10 @@ button {
 
   /*----JOIN PAGE----*/
 
+  p, label {
+    font-size: 0.9em;
+  }
+
   .profile-basic {
     display: flex;
     flex-direction: row;
@@ -663,11 +738,11 @@ button {
   }
 
   .pic-info {
-    flex-basis: 30%;
+    flex-basis: 33.33%;
   }
 
   .name-email-and-password {
-    flex-basis: 65%;
+    flex-basis: 66.66%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -684,8 +759,9 @@ button {
   }
 
   .genre-category {
-    flex-basis: 30%;
+    flex-basis: 33.33%;
     text-align: left;
+    padding: 0.5% 0%;
   }
 
   .profile-adds textarea {
@@ -693,7 +769,8 @@ button {
   }
 
   button {
-    width: 20%;
+    width: 25%;
+    font-size: 0.9em;
   }
 
 }
