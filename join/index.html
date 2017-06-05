@@ -6,9 +6,171 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Film Club - Join</title>
+    <title>Film Club - Calendar</title>
+    <link href="../css/main.css" rel="stylesheet">
+
+    <!-- PT Sans fonts -->
+    <link href="https://fonts.google.com/?selection.family=PT+Sans:400,700" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./images/filmclub.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+
+
   <body>
+      <header>
+
+        <div class="header-img-box">
+          <img src="../images/filmclub.png" alt="film club logo" id="header-img">
+        </div>
+
+        <div class="nav-bar" id="top-nav-bar">
+          <div class="nav-link" id="home-link">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="nav-link" id="calendar-link">
+            <a href="../calendar/index.html">Calendar</a>
+          </div>
+          <div class="nav-link" id="join-link">
+            <a href="index.html">Join</a>
+          </div>
+          <div class="gap">
+          </div>
+        </div>
+
+      </header>
+
+
+      <main>
+        <section class="section-top" id="join-form">
+          <h1 class="section-heading">Join Film Club</h1>
+
+          <form class="join-form" action="index.html" method="post">
+              <!-- Basic Profile Info -->
+              <div class="profile-basic">
+                  <div class="pic-info">
+                      <div class="pic-info-text">
+                          <p>profile picture</p>
+                          <input type="file" name="prof-pic">
+                      </div>
+                      <img src="../images/profile-placeholder.png" alt="profile picture placeholder">
+                  </div>
+
+                  <div class="name-email-and-password">
+                      <div class="name-email">
+                          <div class="name-info">
+                            <p>name</p>
+                            <input type="text" name="full-name">
+                          </div>
+
+                          <div class="email-info">
+                            <p>email address</p>
+                            <input type="email" name="email-address">
+                          </div>
+                      </div>
+
+                      <div class="password-and-confirm">
+                          <div class="first-password">
+                            <p>password</p>
+                            <input type="password" name="password-one">
+                          </div>
+                          <div class="second-password">
+                            <p>confirm password</p>
+                            <input type="password" name="password-two">
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <!-- Genre Preferences -->
+              <div class="profile-genre">
+                  <p>Which genres are you interested in?</p>
+                  <div class="genre-choice">
+                      <div class="genre-category">
+                        <input type="checkbox" name="action">
+                        <label for="action">action</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="adventure">
+                        <label for="adventure">adventure</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="comedy">
+                        <label for="comedy">comedy</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="drama">
+                        <label for="drama">drama</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="fantasy">
+                        <label for="fantasy">fantasy</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="historical">
+                        <label for="historical">historical</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="horror">
+                        <label for="horror">horror</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="mystery">
+                        <label for="mystery">mystery</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="romance">
+                        <label for="romance">romance</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="science fiction">
+                        <label for="science fiction">science fiction</label>
+                      </div>
+                      <div class="genre-category">
+                        <input type="checkbox" name="western">
+                        <label for="western">western</label>
+                      </div>
+                      <div class="genre-category">
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Additional Profile Info -->
+              <div class="profile-adds">
+                  <div class="additional-title">
+                    <p>Additional input</p>
+                  </div>
+                  <textarea rows="4" name="additional-info"></textarea>
+              </div>
+
+              <!-- Join Button -->
+              <div class="join-button">
+                  <button type="button" name="join-button">Join Film Club</button>
+              </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+
+        <div class="nav-bar" id="bottom-nav-bar">
+          <div class="nav-link" id="home-link">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="nav-link" id="calendar-link">
+            <a href="./calendar/index.html">Calendar</a>
+          </div>
+          <div class="nav-link" id="join-link">
+            <a href="./join/index.html">Join</a>
+          </div>
+        </div>
+
+        <div class="legal-footer">
+          <p>© 2017, Film Club</p>
+        </div>
+
+      </footer>
 
   </body>
 </html>

@@ -29,7 +29,7 @@ img {
   max-width: 100%;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, ul, li, span {
+a, p, h1, h2, h3, h4, h5, h6, ul, li, span, label, button {
   font-family: 'PT Sans';
   color: #0B1942;
   font-weight: 300;
@@ -54,7 +54,8 @@ header {
   justify-content: flex-start;
   align-items: stretch;
   align-content: center;
-  min-height: 15vw;
+  max-height: 10%;
+  /*min-height: 15vw;*/
 }
 
 /*--Top Nav Bar---*/
@@ -62,8 +63,10 @@ header {
 .header-img-box {
   margin: 0;
   background-color: #F5005B;
-  flex-basis: 33.33%;
+  flex-basis: 25%;
   padding: 2%;
+  height: 100%;
+  /*text-align: center;*/
 }
 
 
@@ -117,6 +120,10 @@ h1 {
   padding: 4%;
 }
 
+.section-top {
+  background-color: #FFFFFF;
+}
+
 .section-top h2 {
   padding: 1% 4%;
 }
@@ -137,7 +144,7 @@ h1 {
 
 .section-bottom {
   background-color: #0B1942;
-  padding: 4%
+  padding: 4%;
 }
 
 .section-bottom h1 {
@@ -249,12 +256,127 @@ footer {
 }
 
 .legal-footer p {
-  color: white;
+  color: #FFFFFF;
 }
 
 
+/*-------------------CALENDAR PAGE------------------------*/
 
-/*----Tablet Display----*/
+/*--Calendar Bottom Section---*/
+.section-bottom h1 {
+  padding-top: 5%;
+}
+
+.section-bottom h5 {
+  color: #FFFFFF;
+}
+
+.section-bottom {
+  margin: 0%;
+  padding: 0%;
+}
+
+.calendar {
+  margin: 0%;
+  padding: 4% 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; /*consider adjust*/
+  align-content: flex-start;
+}
+
+.day {
+  /*margin: 0.25%*/
+  margin: 0.75% 0% 0%;
+  flex-basis: 13.5%;
+  min-height: 15vw;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.date-number {
+  min-width: 7vw;
+  /*flex-basis: 50%;*/
+  margin: 0%;
+  padding: 5%;
+  background-color: #0B1942;
+  text-align: center;
+}
+
+.show-day {
+  background-color: #F5005B;
+}
+
+.blank-day {
+  background-color: #0B1942;
+}
+
+
+/*-------------------JOIN PAGE------------------------*/
+
+input {
+  width: 100%;
+}
+
+.genre-choice input {
+  width: auto;
+}
+
+.pic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pic-info-text {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+.pic-info img {
+  max-height: 50vh;
+  padding: 2%;
+  border-radius: 50%;
+}
+
+.profile-genre {
+  padding: 7% 0% 0% 0%;
+}
+
+.profile-adds {
+  padding: 7% 0% 0% 0%;
+}
+
+.profile-adds textarea {
+  width: 100%;
+}
+
+.join-button {
+  padding: 7% 0%;
+}
+
+button {
+  background-color: #F5005B;
+  color: white;
+  width: 35%;
+  border: none;
+  padding: 4%;
+  font-weight: 500;
+  font-size: 0.75em;
+}
+/*------------------------------------------------------*/
+
+
+/*-------Tablet Display-------*/
 
 @media screen and ( min-width: 545px ) {
 
@@ -282,7 +404,7 @@ footer {
     margin: 0;
     background-color: #F5005B;
     flex-basis: 20%;
-    padding: 2%;
+    padding: 1%;
   }
 
   #top-nav-bar {
@@ -340,14 +462,13 @@ footer {
   footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
-    align-content: center;
+    align-content: flex-start;
     width: 100%;
   }
 
   #bottom-nav-bar {
-    /*flex-basis: 60%;*/
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -357,7 +478,6 @@ footer {
   }
 
   #bottom-nav-bar .nav-link {
-    /*flex-basis: 33.33%;*/
     width: 100%;
     padding: 2%;
   }
@@ -372,11 +492,80 @@ footer {
   }
 
 
+  /*----CALENDAR PAGE----*/
+
+  .day {
+    /*margin: 0.25%*/
+    margin: 0.6% 0% 0%;
+    flex-basis: 13.8%;
+  }
+
+  .date-number {
+    min-width: 4vw;
+    /*flex-basis: 50%;*/
+    margin: 0%;
+    padding: 5%;
+  }
+
+
+
+  /*----JOIN PAGE----*/
+  .profile-basic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+  }
+
+  .pic-info img {
+    width: auto;
+    max-height: 35vh;
+  }
+
+  .pic-info {
+    flex-basis: 49%;
+  }
+
+  .name-email-and-password {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+  }
+
+  .name-email, .password-and-confirm {
+    width: 100%;
+  }
+
+  .genre-choice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+  }
+
+  .genre-category {
+    flex-basis: 48%;
+    text-align: left;
+  }
+
+  button {
+    width: 25%;
+  }
+
 }
 
 
 
-/*----Desktop Display----*/
+
+/*-------Desktop Display-------*/
 
 @media screen and ( min-width: 769px ) {
 
@@ -384,6 +573,19 @@ footer {
 
   p, li {
     font-size: 0.85rem;
+  }
+
+  body {
+    margin: 0% 4%;
+    background-color: black;
+  }
+
+  .header-img-box {
+    flex-basis: 10%;
+  }
+
+  .gap {
+    flex-basis: 70%;
   }
 
   .film-layout {
@@ -410,6 +612,76 @@ footer {
     padding-bottom: 4%;
   }
 
+  #bottom-nav-bar {
+    flex-basis: 40%;
+  }
 
+
+  /*----CALENDAR PAGE----*/
+
+  .day {
+    /*margin: 0.25%*/
+    margin: 0.6% 0% 0%;
+    flex-basis: 13.8%;
+  }
+
+  .date-number {
+    min-width: 3vw;
+    /*flex-basis: 50%;*/
+    margin: 0%;
+    padding: 2%;
+
+  }
+
+
+  /*----JOIN PAGE----*/
+
+  .profile-basic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .pic-info img {
+    width: auto;
+    max-height: 35vh;
+  }
+
+  .pic-info {
+    flex-basis: 30%;
+  }
+
+  .name-email-and-password {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .name-email {
+    margin-right: 2%;
+  }
+
+  .password-and-confirm {
+    margin-left: 2%;
+  }
+
+  .genre-category {
+    flex-basis: 30%;
+    text-align: left;
+  }
+
+  .profile-adds textarea {
+    width: 75%;
+  }
+
+  button {
+    width: 20%;
+  }
 
 }
