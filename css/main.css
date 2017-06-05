@@ -69,6 +69,11 @@ header {
   /*text-align: center;*/
 }
 
+.header-img-box img {
+  width: auto;
+  max-height: 20vh;
+}
+
 
 #top-nav-bar {
   display: flex;
@@ -93,6 +98,8 @@ header {
 .nav-link a {
   text-decoration: none;
   color: #FFFFFF;
+  width: 100%;
+  text-align: center;
 }
 
 #home-link {
@@ -403,8 +410,13 @@ button {
   .header-img-box {
     margin: 0;
     background-color: #F5005B;
-    flex-basis: 20%;
+    flex-basis: 15%;
     padding: 1%;
+  }
+
+  .header-img-box img {
+    width: auto;
+    max-height: 15vh;
   }
 
   #top-nav-bar {
