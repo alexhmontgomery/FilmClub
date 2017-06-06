@@ -92,9 +92,9 @@ header {
 
 #top-nav-bar .nav-link {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  align-content: stretch;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   padding: 2% 0%;
   width: 100%;
