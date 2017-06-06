@@ -110,6 +110,10 @@ header {
   text-align: center;
 }
 
+.nav-link a {
+  height: 100%;
+}
+
 #home-link {
   background-color: #00A5BF;
   /*width: 100%;*/
