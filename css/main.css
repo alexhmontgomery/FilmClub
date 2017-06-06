@@ -101,7 +101,6 @@ header {
   height: 100%;
 }
 
-
 .nav-link {
   text-decoration: none;
   color: #FFFFFF;
@@ -111,7 +110,7 @@ header {
 }
 
 .nav-link a {
-  height: 100%;
+  height: auto;
 }
 
 #home-link {
